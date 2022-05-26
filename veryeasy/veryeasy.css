@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightcoral;
+}
+
+.board{
+    padding: 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sort{
+    float: left;
+    height: 100%;
+    width: 12.5%;
+    background-color: white;
+}
+
+.sort:nth-child(odd){
+    background-color: black;
+}
+
+.box{
+    width: 100%;
+    height: 12.5%;
+}
+
+.box:nth-child(even){
+    background-color: white;
+}
+
+.sort:nth-child(even) .box:nth-child(even){
+    background-color: black;
+}

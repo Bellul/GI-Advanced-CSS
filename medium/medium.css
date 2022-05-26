@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background: cyan;
+    padding: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.list-box{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4 , 25%);
+    grid-template-rows: repeat(2, 50%);
+    padding-bottom: 20px;
+}
+
+.product{
+    border: solid 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    line-height: 20px;
+    align-items: center;
+}
+
+.product a img{
+    width: 250px;
+    height: 250px;
+}
+
+.product h2{
+    font-size: 18px;;
+}
+
+.product .price{
+    font-style: italic;
+    color: red;
+}
+
+.product .info{
+    font-size: 12px;
+}
